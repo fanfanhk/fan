@@ -5,6 +5,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>梵凡hk  （lzf）</title>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="stylesheet" href="/live2d/css/live2d.css" />
 </head>
 <body>
 <div id="wrapper">
@@ -118,12 +119,25 @@
 	</div>
 	</div>
 	</div>
+
 	<!-- end #page -->
+<div id="landlord">
+	<div class="message" style="opacity:0"></div>
+	<canvas id ="live2d" width="280" height="250" class="live2d"></canvas>
+</div>
 </div>
 	<div id="footer">
 		<p>管理员lzf  bilibili账号（梵凡hk）希望大家多多支持</a>.</p>
 	</div>
 	<!-- end #footer -->
+<script type="text/javascript">
+	var message_Path = '/live2d/'
+	var home_Path = 'https://fanfanhk.github.io/fan/#/'
+</script type="text/javascript" src="/live2d/js/live2d.js"></script>
+</script type="text/javascript" src="/live2d/js/message.js"></script>
+</script type="text/javascript">
+      loadlive2d("live2d","<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/'; ?>live2d/model/tia/model.json");
+</script>
 </body>
 </html>
 
